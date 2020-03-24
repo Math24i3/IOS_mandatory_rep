@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapDemonstration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RwL-Me-fYw">
+                                <rect key="frame" x="0.0" y="179" width="414" height="645"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="El3-80-bEZ" appends="YES" id="zL7-Aa-rZ7"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-Ze-x8f">
+                                <rect key="frame" x="20" y="832" width="113" height="30"/>
+                                <state key="normal" title="Update Location"/>
+                                <connections>
+                                    <action selector="updLocBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hPb-0a-b3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN7-fK-1Ra">
+                                <rect key="frame" x="245" y="832" width="149" height="30"/>
+                                <state key="normal" title="Stop Location Update"/>
+                                <connections>
+                                    <action selector="stopUpdLocBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWn-wa-Y5b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-Df-XpF">
+                                <rect key="frame" x="282" y="141" width="85" height="30"/>
+                                <state key="normal" title="Save marker"/>
+                                <connections>
+                                    <action selector="saveMarker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HxS-60-kXY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name the marker:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8V-Wt-yMH">
+                                <rect key="frame" x="48" y="70" width="140" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXz-XB-Doy">
+                                <rect key="frame" x="48" y="99" width="319" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FFB-Df-XpF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="282" id="01J-QZ-hsZ"/>
+                            <constraint firstItem="P8V-Wt-yMH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="1P2-Hf-v1A"/>
+                            <constraint firstItem="U7g-Ze-x8f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Tc-Bp-u0v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P8V-Wt-yMH" secondAttribute="trailing" constant="226" id="An0-8d-mx7"/>
+                            <constraint firstItem="FN7-fK-1Ra" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HqB-5t-1cz"/>
+                            <constraint firstItem="JXz-XB-Doy" firstAttribute="top" secondItem="P8V-Wt-yMH" secondAttribute="bottom" constant="8" id="JDq-PC-EIV"/>
+                            <constraint firstItem="P8V-Wt-yMH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="Kma-EU-KkR"/>
+                            <constraint firstItem="FFB-Df-XpF" firstAttribute="top" secondItem="JXz-XB-Doy" secondAttribute="bottom" constant="8" id="Mzn-3H-HWl"/>
+                            <constraint firstItem="U7g-Ze-x8f" firstAttribute="baseline" secondItem="FN7-fK-1Ra" secondAttribute="baseline" id="OnB-Va-g3Y"/>
+                            <constraint firstItem="U7g-Ze-x8f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W5U-Tv-RyG"/>
+                            <constraint firstItem="P8V-Wt-yMH" firstAttribute="leading" secondItem="JXz-XB-Doy" secondAttribute="leading" id="Wfj-Jd-bl6"/>
+                            <constraint firstItem="U7g-Ze-x8f" firstAttribute="top" secondItem="RwL-Me-fYw" secondAttribute="bottom" constant="8" id="ixM-EN-sFQ"/>
+                            <constraint firstItem="JXz-XB-Doy" firstAttribute="trailing" secondItem="FFB-Df-XpF" secondAttribute="trailing" id="lS9-C1-F5A"/>
+                            <constraint firstItem="RwL-Me-fYw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ogZ-tq-sil"/>
+                            <constraint firstItem="RwL-Me-fYw" firstAttribute="top" secondItem="FFB-Df-XpF" secondAttribute="bottom" constant="8" id="yma-en-PW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RwL-Me-fYw" secondAttribute="trailing" id="zc4-zM-FTo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="createMarkerLabel" destination="P8V-Wt-yMH" id="5Ag-TA-qS6"/>
+                        <outlet property="map" destination="RwL-Me-fYw" id="1dF-Ho-1mv"/>
+                        <outlet property="saveBtn" destination="FFB-Df-XpF" id="gQH-Sa-nty"/>
+                        <outlet property="txtField" destination="JXz-XB-Doy" id="KFn-Ii-kd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="El3-80-bEZ">
+                    <connections>
+                        <action selector="longPressed:" destination="BYZ-38-t0r" id="Eyv-8c-kXJ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
