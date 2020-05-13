@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CoronaTestFacilitiesNearbyExample
+//  TapBarDemo2020
 //
 //  Created by Mathias Møller Feldt on 01/05/2020.
 //  Copyright © 2020 Mathias Møller. All rights reserved.
@@ -34,4 +34,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

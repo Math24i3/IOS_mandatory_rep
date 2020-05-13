@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xyW-YF-dJ6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1xe-Jy-j6s">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,6 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="tol-31-Ois">
+            <objects>
+                <viewController id="fzj-xe-kF8" customClass="ViewController" customModule="CoronaTestFacilitiesNearbyExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xtq-ND-EE3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-dB-jek">
+                                <rect key="frame" x="106" y="155" width="162" height="30"/>
+                                <state key="normal" title="Check LoginStatus"/>
+                                <connections>
+                                    <action selector="checkLoginBtn:" destination="fzj-xe-kF8" eventType="touchUpInside" id="GhI-f1-GnA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9ed-dB-jek" firstAttribute="centerX" secondItem="Xtq-ND-EE3" secondAttribute="centerX" id="DXX-XK-S6n"/>
+                            <constraint firstItem="9ed-dB-jek" firstAttribute="leading" secondItem="a1O-Ap-n7I" secondAttribute="leading" constant="106" id="DlE-RB-Rwz"/>
+                            <constraint firstItem="9ed-dB-jek" firstAttribute="top" secondItem="a1O-Ap-n7I" secondAttribute="top" constant="111" id="nb3-cl-Vxl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a1O-Ap-n7I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="au6-dw-E4z"/>
+                    <connections>
+                        <segue destination="eXQ-1P-aWF" kind="show" identifier="loginSegue" id="5NB-aS-gdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPS-S3-Kcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216.80000000000001" y="-355.7721139430285"/>
+        </scene>
         <!--Main-->
         <scene sceneID="vHE-ph-gwr">
             <objects>
@@ -46,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygz-pr-4Pz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1277" y="-352"/>
+            <point key="canvasLocation" x="600.79999999999995" y="-352.17391304347831"/>
         </scene>
         <!--List of test facilities-->
         <scene sceneID="UIs-Mc-MYP">
@@ -124,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5t6-KP-jsR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-492" y="-353.07346326836586"/>
+            <point key="canvasLocation" x="1386.4000000000001" y="-353.07346326836586"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Dwc-Zv-jZw">
@@ -155,29 +188,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HQ-XJ-Mgy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1278" y="426"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Dgp-t0-YaQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xyW-YF-dJ6" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="n0o-Fc-15K"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bie-ic-pR5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eXQ-1P-aWF" kind="relationship" relationship="rootViewController" id="DeE-aw-Hr8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WLb-Tz-k6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2106" y="-352"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="7Ts-LJ-ENg">
@@ -277,7 +287,25 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="317.60000000000002" y="-352.17391304347831"/>
+            <point key="canvasLocation" x="2196" y="-352.17391304347831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6OU-wS-i8H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1xe-Jy-j6s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="53E-Ml-8cn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fzj-xe-kF8" kind="relationship" relationship="rootViewController" id="fPM-4C-kGH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0y7-Ac-PNl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1156" y="-355.7721139430285"/>
         </scene>
     </scenes>
     <resources>

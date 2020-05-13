@@ -95,6 +95,7 @@ class FacilityViewController: UIViewController, MKMapViewDelegate, CLLocationMan
 }
 
 extension FacilityViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.facilities.count
     }
@@ -105,9 +106,9 @@ extension FacilityViewController: UITableViewDataSource, UITableViewDelegate {
         
         let distance = facilities[indexPath.row].distance
     
-        if distance < 1500 {
+        if distance < 2500 {
             cell.testlabel.textColor = UIColor(red: 100/255.0, green: 198/255.0, blue: 103/255.0, alpha: 1)
-        } else if distance > 1500 && distance <= 5000 {
+        } else if distance > 2500 && distance <= 5000 {
             cell.testlabel.textColor = UIColor(red: 219/255.0, green: 210/255.0, blue: 124/255.0, alpha: 1)
         } else if distance > 5000 {
             cell.testlabel.textColor = UIColor(red: 216/255.0, green: 82/255.0, blue: 82/255.0, alpha: 1)
