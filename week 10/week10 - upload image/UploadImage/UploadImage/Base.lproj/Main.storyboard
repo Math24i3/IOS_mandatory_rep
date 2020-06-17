@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UploadImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-QN-YnQ">
+                                <rect key="frame" x="0.0" y="87" width="414" height="544"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziF-5p-01N">
+                                <rect key="frame" x="243" y="759" width="151" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="v7M-9w-VRz"/>
+                                </constraints>
+                                <state key="normal" title="Upload image"/>
+                                <connections>
+                                    <action selector="uploadImagebtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="myB-O7-eha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djN-7Y-DUJ">
+                                <rect key="frame" x="20" y="771" width="114" height="30"/>
+                                <state key="normal" title="Download Image"/>
+                                <connections>
+                                    <action selector="downloadImageBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ODE-bc-irc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-kQ-vD9">
+                                <rect key="frame" x="20" y="822" width="171" height="30"/>
+                                <state key="normal" title="Get image from photoroll"/>
+                                <connections>
+                                    <action selector="photoRollBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyE-Zd-XoQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzW-Of-xMa">
+                                <rect key="frame" x="259" y="817" width="135" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="e1G-Qv-eAJ"/>
+                                </constraints>
+                                <state key="normal" title="Take a photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAQ-G0-s4X"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQR-Sy-ErI">
+                                <rect key="frame" x="29" y="663" width="356" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ziF-5p-01N" secondAttribute="bottom" constant="48" id="Aa2-bQ-goJ"/>
+                            <constraint firstItem="djN-7Y-DUJ" firstAttribute="leading" secondItem="iOV-kQ-vD9" secondAttribute="leading" id="CSx-Z0-xv3"/>
+                            <constraint firstItem="bz3-QN-YnQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Cmc-8T-x6j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MzW-Of-xMa" secondAttribute="bottom" constant="5" id="Fa9-mU-FHe"/>
+                            <constraint firstItem="bz3-QN-YnQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HpO-gL-Bes"/>
+                            <constraint firstItem="ZQR-Sy-ErI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="LIK-mF-ZMV"/>
+                            <constraint firstItem="MzW-Of-xMa" firstAttribute="trailing" secondItem="ziF-5p-01N" secondAttribute="trailing" id="OlN-IC-KQG"/>
+                            <constraint firstItem="bz3-QN-YnQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Olc-TK-XDZ"/>
+                            <constraint firstItem="iOV-kQ-vD9" firstAttribute="top" secondItem="djN-7Y-DUJ" secondAttribute="bottom" constant="21" id="PjX-Tj-f3V"/>
+                            <constraint firstItem="MzW-Of-xMa" firstAttribute="baseline" secondItem="iOV-kQ-vD9" secondAttribute="firstBaseline" id="dyY-Sg-pM7"/>
+                            <constraint firstItem="djN-7Y-DUJ" firstAttribute="centerY" secondItem="ziF-5p-01N" secondAttribute="centerY" id="gUN-7Y-bLv"/>
+                            <constraint firstItem="djN-7Y-DUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nHB-W1-xde"/>
+                            <constraint firstItem="ziF-5p-01N" firstAttribute="top" secondItem="ZQR-Sy-ErI" secondAttribute="bottom" constant="62" id="o9z-Zq-eHj"/>
+                            <constraint firstItem="ZQR-Sy-ErI" firstAttribute="centerX" secondItem="bz3-QN-YnQ" secondAttribute="centerX" id="unn-Rb-vry"/>
+                            <constraint firstItem="bz3-QN-YnQ" firstAttribute="centerX" secondItem="ziF-5p-01N" secondAttribute="centerX" constant="-111.5" id="uvT-jO-Ih2"/>
+                            <constraint firstItem="MzW-Of-xMa" firstAttribute="top" secondItem="ziF-5p-01N" secondAttribute="bottom" constant="3" id="wGK-7Z-krI"/>
+                            <constraint firstItem="ziF-5p-01N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="243" id="xl2-rQ-43v"/>
+                            <constraint firstItem="iOV-kQ-vD9" firstAttribute="baseline" secondItem="MzW-Of-xMa" secondAttribute="firstBaseline" id="xx0-vf-Vij"/>
+                            <constraint firstItem="ziF-5p-01N" firstAttribute="top" secondItem="bz3-QN-YnQ" secondAttribute="bottom" constant="128" id="yuw-ht-wob"/>
+                            <constraint firstItem="djN-7Y-DUJ" firstAttribute="top" secondItem="ZQR-Sy-ErI" secondAttribute="bottom" constant="74" id="zVG-QT-d1d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageTxtField" destination="ZQR-Sy-ErI" id="qj5-tg-80j"/>
+                        <outlet property="imageView" destination="bz3-QN-YnQ" id="DR2-Lt-vGt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mario" width="2192" height="2920"/>
+    </resources>
+</document>
