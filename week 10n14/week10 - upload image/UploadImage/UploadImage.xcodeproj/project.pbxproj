@@ -16,6 +16,7 @@
 		F7D3D6F9249A19AB003CB8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D3D6F7249A19AB003CB8BD /* LaunchScreen.storyboard */; };
 		F7D3D701249A1B0B003CB8BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7D3D700249A1B0B003CB8BD /* GoogleService-Info.plist */; };
 		F7D3D704249A1CE2003CB8BD /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D3D703249A1CE2003CB8BD /* CloudStorage.swift */; };
+		F7D3D708249A347A003CB8BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D3D707249A347A003CB8BD /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F7D3D6FA249A19AB003CB8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7D3D700249A1B0B003CB8BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7D3D703249A1CE2003CB8BD /* CloudStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorage.swift; sourceTree = "<group>"; };
+		F7D3D707249A347A003CB8BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF00E0C533F3C2038A2456AD /* Pods_UploadImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UploadImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				F7D3D702249A1CC1003CB8BD /* Storage */,
 				F7D3D6EC249A19AA003CB8BD /* AppDelegate.swift */,
 				F7D3D6EE249A19AA003CB8BD /* SceneDelegate.swift */,
+				F7D3D707249A347A003CB8BD /* LoginViewController.swift */,
 				F7D3D6F0249A19AA003CB8BD /* ViewController.swift */,
 				F7D3D6F2249A19AA003CB8BD /* Main.storyboard */,
 				F7D3D6F5249A19AB003CB8BD /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				F7D3D6F1249A19AA003CB8BD /* ViewController.swift in Sources */,
 				F7D3D704249A1CE2003CB8BD /* CloudStorage.swift in Sources */,
 				F7D3D6ED249A19AA003CB8BD /* AppDelegate.swift in Sources */,
+				F7D3D708249A347A003CB8BD /* LoginViewController.swift in Sources */,
 				F7D3D6EF249A19AA003CB8BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
